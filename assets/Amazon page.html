@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    .bg-dark {
+        background-color: #222f3e;
+      }
+    .bg-light-dark {
+        background-color:#364759 ;
+      }
+    .bg-green {
+        background-color: #469576;
+      }
+    .bg-yellow {
+        background-color: #f56600;
+      }
+    .color-white {
+        color: #eaeded;
+      }
+    .mb-2 {
+        margin-bottom: 2rem;
+      }
+    header div {
+        padding: 0.5rem 2rem;
+      }
+    header img {
+        height: 40px;
+      }
+    header span {
+        margin-right: 1rem;
+        font-weight: 400;
+      }
+
+    .text-center {
+        text-align: center;
+      }
+    .w-100 {
+        width: 100%;
+      }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    main {
+        background-color: #eaeded;
+        padding: 2rem;
+      }
+
+    .row {
+        background-color: white;
+        width: 100%;
+        text-align: center;
+      }
+    .img {
+        width: 304px;
+        height: 379px;
+        object-fit: cover;
+        margin: 1rem;
+        border-radius: 20px;
+        -webkit-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+      }
+    .title-container {
+        text-align: left;
+        padding: 1rem 1rem 0 1.5rem;
+      }
+    .title {
+        font-size: 1.3rem;
+      }
+    .subtitle {
+        font-weight: 600;
+        color: #007185;
+        margin-left: 1rem;
+      }
+    .card {
+        background-color: white;
+      }
+    #img-fw {
+        width: 100%;
+      }
+    .img_container {
+        text-align: center;
+        margin-top: 2rem;
+      }
+    footer {
+        width: 100%;
+        text-align: center;
+      }
+    #back-to-top {
+        padding: 1rem;
+      }
+    #back-to-top a {
+        font-weight: 600;
+      }
+    #footer-logo {
+        padding: 4rem;
+      }
+    #footer-logo img {
+        height: 60px;
+      }
+    #bg-image {
+        background-image: url("bg-image.png");
+        width: 100%;
+        height: 100px;
+      }
+    .four-container{
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: inline-block;
+        height: 380px;
+        width: 300px;
+        padding: 1rem 1rem 0 1.5rem;
+        margin: 0.5rem;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .c1img{
+        width: 40%;   
+    }
+    .oneheadset{
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        transform: translate(-50%,-50%);
+    }
+    .one-oneheadset{
+        position: absolute;
+        top: 48%;
+        left: 23%;
+        transform: translate(-80%,-80%);
+    }
+    .twokeyboard{
+        position: absolute;
+        top: 30%;
+        right: -12%;
+        transform: translate(-50%,-50%);
+    }
+    .two-twokeyboard{
+        position: absolute;
+        top: 48%;
+        right: 10%;
+        transform: translate(-80%,-80%);
+    }
+    .threemice{
+        position: absolute;
+        top: 70%;
+        left: 28%;
+        transform: translate(-50%,-50%);
+    }
+    .three-threemice{
+        position: absolute;
+        top: 85%;
+        left: 32%;
+        transform: translate(-80%,-80%);
+    }
+    .fourchair{
+        position: absolute;
+        top: 70%;
+        right: -12%;
+        transform: translate(-50%,-50%);
+    }
+    .four-fourchair{
+        position: absolute;
+        top: 85%;
+        right: 24%;
+        transform: translate(-80%,-80%);
+    }
+    .see-more{
+        text-align: left;
+        font-size: 10pt;
+        color: #007185;
+        position: absolute;
+        top: 95%;
+        left: 23%;
+        transform: translate(-80%,-80%); 
+    }
+    .one-onesweat{
+        position: absolute;
+        top: 45%;
+        left: 26%;
+        transform: translate(-80%,-80%); 
+    }
+    .two-twojog{
+        position: absolute;
+        top: 45%;
+        right: 20%;
+        transform: translate(-80%,-80%);        
+    }
+    .three-threecard{
+        position: absolute;
+        top: 85%;
+        left: 24%;
+        transform: translate(-80%,-80%);
+    }
+    .four-foureasy{
+        position: absolute;
+        top: 85%;
+        right: 15%;
+        transform: translate(-80%,-80%); 
+    }
+    .see-more2{
+        text-align: left;
+        font-size: 10pt;
+        color: #007185;
+        position: absolute;
+        top: 95%;
+        left: 22%;
+        transform: translate(-80%,-80%); 
+    }
+    .one-one-electronics{
+        position: absolute;
+        top: 45%;
+        left: 26%;
+        transform: translate(-80%,-80%); 
+    }
+    .two-two-fashion{
+        position: absolute;
+        top: 45%;
+        right: 20%;
+        transform: translate(-80%,-80%); 
+    }
+    .three-three-toys{
+        position: absolute;
+        top: 85%;
+        left: 16%;
+        transform: translate(-80%,-80%);
+    }
+    .four-four-beauty{
+        position: absolute;
+        top: 85%;
+        right: 24%;
+        transform: translate(-80%,-80%); 
+    }
+    .shop-all{
+        text-align: left;
+        font-size: 10pt;
+        color: #007185;
+        position: absolute;
+        top: 95%;
+        left: 38%;
+        transform: translate(-80%,-80%); 
+    }
+    .one-one-toylist{
+        position: absolute;
+        top: 45%;
+        left: 31%;
+        transform: translate(-80%,-80%); 
+    }
+    .two-two-electronicgifts{
+        position: absolute;
+        top: 45%;
+        right: -5%;
+        transform: translate(-80%,-80%); 
+    }
+    .three-three-homegifts{
+        position: absolute;
+        top: 85%;
+        left: 25%;
+        transform: translate(-80%,-80%);
+    }
+    .four-four-fashiongifts{
+        position: absolute;
+        top: 85%;
+        right: 2%;
+        transform: translate(-80%,-80%); 
+    }
+    .shop-all2{
+        text-align: left;
+        font-size: 10pt;
+        color: #007185;
+        position: absolute;
+        top: 95%;
+        left: 37%;
+        transform: translate(-80%,-80%); 
+    }
+    .c1sub{
+        font-size: 10pt;
+    }
+    .row:hover .title-container .title .subtitle .img #overlay1 {
+      background: linear-gradient(to top,black 10%, transparent 100%);
+    }
+    .row:hover .title-container .title .subtitle .img #overlay2 {
+      background: linear-gradient(to top,black 10%, transparent 100%);
+    }
+    .row:hover .title-container .title .subtitle .img #overlay3 {
+      background: linear-gradient(to top,black 10%, transparent 100%);
+    }
+    .row:hover .title-container .title .subtitle .img #overlay4 {
+      background: linear-gradient(to top,black 10%, transparent 100%);
+    }
+
+    </style>
+  </head>
+  <body>
+    <header class="w-100">
+      <div class="bg-dark">
+        <img src="logo.png" />
+      </div>
+
+      <div style="overflow: scroll;" class="bg-light-dark color-white">
+        <span>All</span>
+        <span>Today's deals</span>
+        <span>Customer Service</span>
+        <span>Registry</span>
+        <span>Gift Cards</span>
+        <span>Sell</span>
+      </div>
+    </header>
+    <main>
+      <div
+        class="bg-yellow text-center color-white mb-2"
+        style="padding: 0.5rem"
+      >
+        <span>Shop All Holiday Gift Cards</span>
+      </div>
+      <div
+        id="bg-image"
+        class="mb-2 color-white text-center"
+        style="padding: 3rem 0"
+      >
+        <h1>Holiday Gift Guides</h1>
+        <h3>Be a go-gifter</h3>
+      </div>
+      <div class="row">
+        <div class="title-container">
+          <span class="title">Find the perfect gift</span>
+          <span class="subtitle">Shop now</span>
+        </div>
+
+        <img class="img" src="img_1.jpg" id="overlay1"/>
+        <img class="img" src="img_2.jpg" id="overlay2"/>
+        <img class="img" src="img_3.jpg" id="overlay3"/>
+        <img class="img" src="img_4.jpg" id="overlay4"/>
+      </div>
+
+      <div class="four-container">Gaming accessories
+          <img class="c1img oneheadset"src="img_15.jpg"/><div class="c1sub one-oneheadset">Headsets</div>
+          <img class="c1img twokeyboard"src="img_16.jpg"/><div class="c1sub two-twokeyboard">Keyboards</div>
+          <img class="c1img threemice"src="img_17.jpg"/><div class="c1sub three-threemice">Computer mice</div>
+          <img class="c1img fourchair"src="img_18.jpg"/><div class="c1sub four-fourchair">Chairs</div>
+          <div class="see-more">See more</div>
+      </div>
+      
+      <div class="four-container">Comfy styles
+        <img class="c1img oneheadset"src="img_19.jpg"/><div class="c1sub one-onesweat">Sweatshirts</div>
+          <img class="c1img twokeyboard"src="img_20.jpg"/><div class="c1sub two-twojog">Joggers</div>
+          <img class="c1img threemice"src="img_21.jpg"/><div class="c1sub three-threecard">Cardigans</div>
+          <img class="c1img fourchair"src="img_22.jpg"/><div class="c1sub four-foureasy">Easy tees</div>
+          <div class="see-more2">See more</div>
+      </div>
+      
+      <div class="four-container">Holiday Gifts
+        <img class="c1img oneheadset"src="img_11.jpg"/><div class="c1sub one-one-electronics">Electronics</div>
+          <img class="c1img twokeyboard"src="img_12.jpg"/><div class="c1sub two-two-fashion">Fashion</div>
+          <img class="c1img threemice"src="img_13.jpg"/><div class="c1sub three-three-toys">Toys</div>
+          <img class="c1img fourchair"src="img_14.jpg"/><div class="c1sub four-four-beauty">Beauty</div>
+          <div class="shop-all">Shop all gift guides</div>
+      </div>
+      
+      <div class="four-container">Add joy to their wish list
+        <img class="c1img oneheadset"src="img_24.jpg"/><div class="c1sub one-one-toylist">Holiday toy list</div>
+        <img class="c1img twokeyboard"src="img_25.jpg"/><div class="c1sub two-two-electronicgifts">Electronic Gifts</div>
+        <img class="c1img threemice"src="img_26.jpg"/><div class="c1sub three-three-homegifts">Home Gifts</div>
+        <img class="c1img fourchair"src="img_27.jpg"/><div class="c1sub four-four-fashiongifts">Fashion Gifts</div>
+        <div class="shop-all2">Shop all gift guides</div>
+      </div>
+      
+
+      <div class="img_container">
+        <img id="img-fw" src="img_9.png" />
+        <span class="title">Play the gifting game</span>
+        <span class="subtitle">Shop gaming</span>
+      </div>
+      <div class="img_container">
+        <img id="img-fw" src="img_10.png" />
+        <span class="title">The sound of cheer</span>
+        <span class="subtitle">Shop Audio & Accessories</span>
+      </div>
+    </main>
+
+    <footer>
+      <div id="back-to-top" class="bg-light-dark">
+        <a class="color-white" href="#">Back to top</a>
+      </div>
+      <div id="footer-logo" class="bg-dark w-100">
+        <img src="logo.png" />
+      </div>
+    </footer>
+  </body>
+</html>
+      
